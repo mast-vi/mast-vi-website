@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Homepage Mast-VI</title>
+  <!-- Sostituisci questi colori con quelli del tuo logo -->
+  <style>
+    :root {
+      --primary: #1e355e;  /* blu logo */
+      --secondary: #e7b416; /* giallo logo */
+      --accent: #ffffff;    /* bianco */
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, var(--primary) 60%, var(--secondary) 100%);
+      min-height: 100vh;
+      color: var(--accent);
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(30,53,94,0.95);
+      padding: 16px 48px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+    }
+    .logo img {
+      height: 60px;
+    }
+    nav {
+      display: flex;
+      gap: 24px;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: bold;
+      background: var(--secondary);
+      padding: 12px 18px;
+      border-radius: 30px;
+      box-shadow: 0 2px 8px rgba(30,53,94,0.12);
+      transition: background 0.2s, color 0.2s, transform 0.2s;
+      font-size: 1.1rem;
+    }
+    nav a:hover {
+      background: var(--accent);
+      color: var(--primary);
+      transform: translateY(-2px) scale(1.06);
+    }
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 100px;
+    }
+    .main-content h1 {
+      font-size: 2.8rem;
+      margin-bottom: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: var(--accent);
+      text-shadow: 0 2px 6px rgba(30,53,94,0.18);
+    }
+    .main-content p {
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+      color: var(--secondary);
+    }
+    @media (max-width: 600px) {
+      header {padding: 10px 12px;}
+      nav {gap: 10px;}
+      .logo img {height: 40px;}
+      .main-content {margin-top: 40px;}
+      .main-content h1 {font-size: 2rem;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="Home.html">
+        <img src="logo.png" alt="Logo Azienda Mast-VI">
+      </a>
+    </div>
+    <nav>
+      <a href="Home.html">Home</a>
+      <a href="Azienda.html">Azienda</a>
+      <a href="Prodotti.html">Prodotti</a>
+      <a href="Servizi.html">Servizi</a>
+      <a href="Contatti.html">Contatti</a>
+    </nav>
+  </header>
+  <div class="main-content">
+    <h1>Benvenuti in Mast-VI</h1>
+    <p>Professionalità, innovazione e qualità al servizio dei nostri clienti.</p>
+  </div>
+</body>
+</html>
