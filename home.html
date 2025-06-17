@@ -7,14 +7,15 @@
   <!-- Sostituisci questi colori con quelli del tuo logo -->
   <style>
     :root {
-      --primary: #1e355e;  /* blu logo */
-      --secondary: #e7b416; /* giallo logo */
+      --primary: ##14365d;  /* blu logo */
+      --secondary: #da5635; /* giallo logo */
       --accent: #ffffff;    /* bianco */
+      --black: #000000
     }
     body {
       margin: 0;
       font-family: 'Segoe UI', Arial, sans-serif;
-      background: linear-gradient(135deg, var(--primary) 60%, var(--secondary) 100%);
+      background: linear-gradient(90deg, var(--primary) 60%, var(--secondary) 100%);
       min-height: 100vh;
       color: var(--accent);
     }
@@ -22,12 +23,12 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background: rgba(30,53,94,0.95);
+      background: rgba(255, 255, 255, 1);
       padding: 16px 48px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.10);
     }
     .logo img {
-      height: 60px;
+      height: 120px;
     }
     nav {
       display: flex;
@@ -35,9 +36,9 @@
     }
     nav a {
       text-decoration: none;
-      color: var(--accent);
+      color: var(--black);
       font-weight: bold;
-      background: var(--secondary);
+      background: var(--primary);
       padding: 12px 18px;
       border-radius: 30px;
       box-shadow: 0 2px 8px rgba(30,53,94,0.12);
